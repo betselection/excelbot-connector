@@ -1,4 +1,4 @@
-excelbot-connector
+ExcelBot Connector
 ==================
 
 BetSoftware's ExcelBot Connector module.
