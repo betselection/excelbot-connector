@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{423D297B-DDFF-4465-8AED-FA2DC02DDE12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ExcelBot__Connector</RootNamespace>
+    <AssemblyName>ExcelBot__Connector</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ExcelApi">
+      <HintPath>..\..\..\..\EXTERNAL\netoffice\NetOffice 1.6.0\NET 2.0\Assemblies\Any CPU\ExcelApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeApi">
+      <HintPath>..\..\..\..\EXTERNAL\netoffice\NetOffice 1.6.0\NET 2.0\Assemblies\Any CPU\OfficeApi.dll</HintPath>
+    </Reference>
+    <Reference Include="VBIDEApi">
+      <HintPath>..\..\..\..\EXTERNAL\netoffice\NetOffice 1.6.0\NET 2.0\Assemblies\Any CPU\VBIDEApi.dll</HintPath>
+    </Reference>
+    <Reference Include="NetOffice">
+      <HintPath>..\..\..\..\EXTERNAL\netoffice\NetOffice 1.6.0\NET 2.0\Assemblies\Any CPU\NetOffice.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExcelBot__Connector.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
